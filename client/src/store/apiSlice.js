@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-// const baseURI = 'http://localhost:8080';
-const baseURI = 'https://mernexpensetracker92.herokuapp.com';
+ const baseURI = 'http://localhost:8080';
+//const baseURI = 'https://mernexpensetracker92.herokuapp.com';
 
 export const apiSlice = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: baseURI }),
@@ -20,7 +20,6 @@ export const apiSlice = createApi({
             providesTags: ['transaction']
         }),
 
-        // add new Transaction
         addTransaction: builder.mutation({
             query: (initialTransaction) => ({
                 // post: 'http://localhost:8080/api/transaction'

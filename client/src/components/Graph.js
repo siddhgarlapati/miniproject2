@@ -8,7 +8,7 @@ import { chartData, getTotal } from '../helper/helper';
 Chart.register(ArcElement);
 
 export default function Graph() {
-    const { data, isFetching, isSuccess, isError } = api.useGetLabelsQuery()
+    const { data, isFetching, isSuccess, isError } = api.useGetLabelsQuery();
 
     let graphData;
 

@@ -12,7 +12,8 @@ export default function Labels() {
         Transactions = <div>Fetching</div>;
     }
     else if (isSuccess) {
-        console.log(getLabels(data, 'type'));
+        //console.log(getLabels(data, 'type'));
+        console.log(data);
         Transactions = getLabels(data, 'type').map((v, i) => <LabelComponent key={i} data={v}></LabelComponent>);
     }
     else if (isError) {
@@ -27,7 +28,7 @@ export default function Labels() {
 }
 
 function LabelComponent({ data }) {
-    if (!data) return <></>
+    if (!data) return <>hi hello</>
     else {
         return (
             <div className="labels flex justify-between">

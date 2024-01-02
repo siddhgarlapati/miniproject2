@@ -9,7 +9,7 @@ function App() {
         <h1 className="text-4xl py-8 mb-10 bg-purple text-white rounded">Expense Tracker</h1>
 
         {/* grid columns */}
-        <div className="grid md:grid-cols-2" gap-4>
+        <div className="grid md:grid-cols-2" gap-4 = "true">
           {/* Chart */}
           <Graph></Graph>
           {/* Form */}
